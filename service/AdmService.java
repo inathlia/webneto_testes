@@ -1,9 +1,5 @@
 package service;
 
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
 import dao.AdmDAO;
 import model.Adm;
 import spark.Request;
@@ -14,7 +10,7 @@ public class AdmService {
 
 	private AdmDAO admDAO;
 
-	public AdmService() throws IOException {
+	public AdmService(){
 		admDAO = new AdmDAO(); 
 	}
 

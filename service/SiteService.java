@@ -1,9 +1,5 @@
 package service;
 
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
 import dao.SiteDAO;
 import model.Site;
 import spark.Request;
@@ -14,7 +10,7 @@ public class SiteService {
 
 	private SiteDAO siteDAO;
 
-	public SiteService() throws IOException {
+	public SiteService(){
 		siteDAO = new SiteDAO(); // o que é produto.dat?
 	}
 

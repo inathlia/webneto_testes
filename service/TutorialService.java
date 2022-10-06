@@ -1,9 +1,5 @@
 package service;
 
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
 import dao.TutorialDAO;
 import model.Tutorial;
 import spark.Request;
@@ -14,7 +10,7 @@ public class TutorialService {
 
 	private TutorialDAO tutorialDAO;
 
-	public TutorialService() throws IOException {
+	public TutorialService(){
 		tutorialDAO = new TutorialDAO(); // o que é produto.dat?
 	}
 

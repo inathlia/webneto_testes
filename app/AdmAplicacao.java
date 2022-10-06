@@ -11,13 +11,13 @@ public class AdmAplicacao {
     public static void main(String[] args) {
         port(6789); //verificar porta
 
-        post("/adm", (request, response) -> admService.insert(request, response));
+        post("/adm", (request, response) -> admService.add(request, response));
 
         get("/adm/:id", (request, response) -> admService.get(request, response));
 
         get("/adm/update/:id", (request, response) -> admService.update(request, response));
 
-        get("/adm/delete/:id", (request, response) -> admService.delete(request, response));
+        get("/adm/delete/:id", (request, response) -> admService.remove(request, response));
 
         //get("/adm", (request, response) -> admService.getAll(request, response));
                
