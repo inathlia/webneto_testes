@@ -20,7 +20,7 @@ public class Tutorial {
 		setFoto(foto);
 	}		
 	
-	public int getID() {
+	public int getId() {
 		return id;
 	}
 

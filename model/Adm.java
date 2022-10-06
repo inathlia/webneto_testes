@@ -16,7 +16,7 @@ public class Adm {
 		setSenha(senha);
 	}		
 	
-	public int getID() {
+	public int getId() {
 		return id;
 	}
 

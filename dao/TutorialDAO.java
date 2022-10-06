@@ -98,7 +98,7 @@ public class TutorialDAO extends DAO{
 			String sql = "UPDATE tutorial SET passos = '" + tutorial.getPassos() + "', "
 					   + "video = '" + tutorial.getVideo() + "', "
                        + "titulo = '" + tutorial.getTitulo() + "', " 
-                       + "foto = '" + tutorial.getFoto() + "'" + "WHERE id = " + tutorial.getID();
+                       + "foto = '" + tutorial.getFoto() + "'" + "WHERE id = " + tutorial.getId();
 			PreparedStatement st = conexao.prepareStatement(sql);
 		  
 			st.executeUpdate();

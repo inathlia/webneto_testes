@@ -96,7 +96,7 @@ public class SiteDAO extends DAO{
 		try {  
 			String sql = "UPDATE site SET link = '" + site.getLink() + "', "
 					   + "logo = '" + site.getLogo() + "', " 
-                       + "nome = '" + site.getNome() + "'" + "WHERE id = " + site.getID();
+                       + "nome = '" + site.getNome() + "'" + "WHERE id = " + site.getId();
 			PreparedStatement st = conexao.prepareStatement(sql);
 		  
 			st.executeUpdate();

@@ -95,7 +95,7 @@ public class AdmDAO extends DAO {
 		boolean status = false;
 		try {  
 			String sql = "UPDATE adm SET nome = '" + adm.getNome() + "', "
-					   + "senha = '" + adm.getSenha() + "'" + "WHERE id = " + adm.getID();
+					   + "senha = '" + adm.getSenha() + "'" + "WHERE id = " + adm.getId();
 			PreparedStatement st = conexao.prepareStatement(sql);
 		  
 			st.executeUpdate();

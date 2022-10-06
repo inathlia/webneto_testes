@@ -18,7 +18,7 @@ public class Site {
 		setNome(nome);
 	}		
 	
-	public int getID() {
+	public int getId() {
 		return id;
 	}
 
