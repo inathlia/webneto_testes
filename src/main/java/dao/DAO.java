@@ -14,7 +14,7 @@ public class DAO {
 	public boolean conectar() {
 		String driverName = "org.postgresql.Driver";                    
 		String serverName = "localhost";
-		String mydatabase = "webneto";
+		String mydatabase = "webneto_teste";
 		int porta = 5432; //verificar esse!!!
 		String url = "jdbc:postgresql://" + serverName + ":" + porta +"/" + mydatabase;
 		String username = "postgres";
